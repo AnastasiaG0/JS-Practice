@@ -13,7 +13,7 @@ function createStudentsList(listArr) {
         cardList.appendChild(card)
     })
 
-    document.body.appendChild(cardList)
+    studentListContainer.appendChild(cardList)
 }
 
 let allStudents=[
@@ -24,9 +24,13 @@ let allStudents=[
     {name: 'Антон', age: 7}
 ]
 
+let studentListContainer = document.createElement('div')
+studentListContainer.setAttribute('id', 'student-list-container')
+document.body.append(studentListContainer)
+
 let listTitle = document.createElement('h1')
 listTitle.textContent = "Список студентов"
-document.body.append(listTitle)
+studentListContainer.append(listTitle)
 
 createStudentsList(allStudents)
 
