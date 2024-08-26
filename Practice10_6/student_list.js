@@ -417,7 +417,6 @@
     //создаём кнопку удаления информации
     function createDeleteButton(studentsArray, containerList) {
         let containerDelete = document.getElementById('delete_list')
-        
 
         //проверяем, есть ли студенты
         if (studentsArray.length === 0) {
@@ -536,17 +535,6 @@
 
             createDeleteButton(studentsArray, containerList)
         }
-
-        
-        /*// Показываем кнопку удаления информации, если есть студенты
-        const deleteButtonContainer = document.getElementById('delete_list')
-
-        if (deleteButtonContainer) {
-            deleteButtonContainer.style.display = filteredStudents.length ? 'block' : 'none'
-        }
-        else {
-            createDeleteButton(studentsArray, containerList)
-        }*/
     }
 
     //сохраняем данные студентов в localStorage
